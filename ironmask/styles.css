@@ -1,0 +1,227 @@
+body {
+    background-image: url('https://i.postimg.cc/y8dZ0Vc4/iss068e054895-orig.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.shooting-star {
+    position: absolute;
+    top: 50px;
+    animation: shootingStar 40s linear infinite;
+    opacity: 0;
+}
+
+@keyframes shootingStar {
+  from {
+    left: -10%; 
+    top: 10%; 
+    transform: rotate(45deg); 
+    opacity: 0; 
+  }
+  to {
+    left: 110%; 
+    top: 50%; 
+    transform: rotate(-45deg);
+    opacity: 1; 
+  }
+}
+
+.shooting-star img {
+    width: 350px;
+    height: auto;
+}
+
+
+/*#search-form {
+    display: flex; 
+    width: 100px;
+}
+
+#search-input {
+    flex: 1; 
+    padding: 10px;
+    border: 1px solid #ccc;
+}*/
+
+.container {
+  float: left;
+  margin-left: 20px;
+}
+
+.container h2 {
+  font-size: 30px;
+}
+
+/*select {
+  appearance: none; 
+  padding: 10px; 
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  width: 200px;
+}
+
+select::-ms-expand,
+select::-webkit-select {
+  width: 40px; 
+  height: 40px; 
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="button"] {
+  appearance: none;
+  padding: 10px 20px; 
+  font-size: 16px; 
+  background-color: #007bff; 
+  color: #fff; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}*/
+
+.floating-container {
+  position: relative;
+  display: inline-block;
+  float: none;
+}
+
+.floating-container:not(:first-child) {
+  margin-left: 30px;
+}
+
+.floating-container img {
+  width: auto;
+  max-height: 100px;
+}
+
+.floating-container.icon1 {
+  position: relative;
+  float: none;
+  /*top: 450px;
+  left: 50px;*/
+  z-index: 8;
+}
+
+.floating-container.icon2 {
+  position: relative;
+  float: none;
+  /*top: 450px;
+  left: 200px;*/
+  z-index: 7;
+}
+
+.floating-container.icon3 {
+  position: relative;
+  float: none;
+  /*top: 450px;
+  left: 350px;*/
+  z-index: 6;
+}
+
+.floating-container.icon4 {
+  position: relative;
+  float: none;
+  /*top: 450px;
+  left: 480px;*/
+  z-index: 5;
+}
+
+.floating-container.icon5 {
+  position: relative;
+  float: none;
+  /*top: 450px;
+  left: 650px;*/
+  z-index: 4;
+}
+
+.floating-container.icon6 {
+  position: relative;
+  float: none;
+  /*top: 450px;
+  left: 820px;*/
+  z-index: 3;
+}
+
+.floating-container.icon7 {
+  position: relative;
+  float: none;
+  /*top: 450px;
+  left: 990px;*/
+  z-index: 2;
+}
+
+.floating-container.icon8 {
+  position: relative;
+  float: none;
+  /*top: 450px;
+  left: 1140px;*/
+  z-index: 1;
+}
+
+.button-link {
+  display: inline-block;
+  background-color: white;
+  color: black; 
+  padding: 5px 15px;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+}
+
+/* 悬停时的按钮样式 */
+.button-link:hover {
+  background-color: #0056b3; /* 鼠标悬停时的背景颜色 */
+}
+
+.floating-container {
+  position: relative; 
+}
+
+.info-box {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 10px;
+  position: absolute;
+  width: 350px; 
+  height: 380px;
+  left: 50%;
+  top:50%;
+}
+
+.info-box h3 {
+  font-size: 20px;
+}
+
+.floating-container:hover .info-box {
+  display: block;
+}
+
+li {
+  line-height: 1.5;
+}
+
+.welcome-message {
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+    max-width: 60%;
+    font-size: 20px;
+}
+
+.clas{
+  display: block;
+  margin: auto;
+  text-align: center;
+  font-size: 60px
+}
